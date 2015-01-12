@@ -1,0 +1,115 @@
+$bg: #8C2137;
+$linkColor: #1e76ae;
+$linkColorHover: #87d1f5;
+
+/*
+todo ヘッダスクロール
+todo github
+todo itemprop
+--
+todo twitter cards
+todo ogp
+todo twitter box
+*/
+
+/**
+ * global
+ */
+body {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: $linkColor;
+  &:hover {
+    color: $linkColorHover;
+  }
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.fa {
+  margin-right:0.5em;
+}
+.fa-external-link {
+  margin-left:0.5em;
+}
+
+
+/**
+ * styles
+ */
+header {
+  color: #fff;
+  background: $bg;
+  text-align: center;
+  position: relative;
+  padding: 2em;
+
+  .logo img {
+    margin: 0 auto 1em;
+  }
+}
+
+main {
+  max-width: 960px;
+  padding: 0 1em;
+  margin: 4em auto;
+}
+
+h2 {
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: 120%;
+  margin-top: 3em;
+  text-shadow: 1px 1px 8px rgba(100, 100, 100, 0.2);
+}
+
+iframe {
+  width: 100%;
+  max-width: 960px;
+}
+
+.button-primary {
+  background-color: rgb(66, 184, 221);
+  color: #f8f8f8;
+  font-weight: bold;
+  margin: 0.5em 0;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.socials {
+  text-align: right;
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+.contacts {
+  li {
+    list-style: none;
+  }
+  .fa {
+    color: #444;
+    margin-left: 0;
+  }
+}
+
+.fb-box {
+  margin-top: 50px;
+}
+
+footer {
+  font-size: 90%;
+  text-align: center;
+  background-color: #eee;
+  padding: 2em;
+}
