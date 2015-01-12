@@ -10,7 +10,7 @@
 <meta property="og:title" content="Fishmans Night Osaka 2015/フィッシュマンズナイト大阪 3/7(土)"/>
 <meta property="og:description" content="毎年3月に行われているフィッシュマンズナイト大阪のウェブサイト。2015年は3/7(土)開催です！" />
 <meta property="og:image" content="img/fmno2015ogp.png" />
-<meta property="og:url" content="http://fishmansnight.net/" />
+<!--<meta property="og:url" content="http://fishmansnight.net/" />-->
 <meta property="og:site_name" content="Fishmans Night Osaka"/>
 <meta content="summary" name="twitter:card" />
 <meta content="@fishmansnight" name="twitter:site" />
@@ -31,7 +31,7 @@
 <div itemscope itemtype="http://data-vocabulary.org/Event">
 <header>
 	<div class="logo"><img src="img/logo.png" alt="we're fish" class="pure-img" /></div>
-	<h1>Fishmans Night Osaka 2015.03.07.sat.</h1>
+	<h1 itemprop="summary">Fishmans Night Osaka 2015.03.07.sat.</h1>
 </header>
 
 
@@ -45,29 +45,35 @@
 		</ul>
 
 
-		<h2>"でかい音でフィッシュマンズを聴きたい"<br>ただそれだけの一夜、フィッシュマンズナイト大阪です。</h2>
+		<h2 itemprop="description">"でかい音でフィッシュマンズを聴きたい"<br>ただそれだけの一夜、フィッシュマンズナイト大阪です。</h2>
 	</div>
 
 
 	<div class="pure-u-1 pure-u-md-1-2">
 		<section>
 			<h3>日時</h3>
-			<time itemprop="startDate" datetime="2015-03-07T17:00+09:00">2015年3月7日 (土曜日)<br />
-					17:00 - 22:00</time>
+			<time itemprop="startDate" datetime="2015-03-07T17:00+09:00">2015年3月7日 (土曜日)<br />17:00</time> -  <time itemprop="endDate" datetime="2015-03-07T22:00+09:00">22:00</time>
 		</section>
 
 		<section>
 			<h3>会場</h3>
-			<a href="http://www.shan-gri-la.jp/" target="_blank">Shangri-La<i class="fa fa-external-link"></i></a> (大阪・梅田)<br />
-			大阪市北区大淀南1-1-14<br>
-			TEL: 06-6343-8601<br>
+			<div itemprop="location" itemscope itemtype="">
+				<h4 itemprop="name"><a href="http://www.shan-gri-la.jp/" target="_blank">Shangri-La<i class="fa fa-external-link"></i></a> (大阪・梅田)</h4>
+				<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+					<span itemprop="region">大阪市</span>
+					<span itemprop="locality">北区</span>
+					<span itemprop="street-address">大淀南1-1-14</span>
+				</span>
+				<br>
+				TEL: 06-6343-8601<br>
+			</div>
 		</section>
 
-		<section>
+		<section itemprop="ticketAggregate">
 			<h3>チケット</h3>
 			<ul>
-				<li>前売: 2000円 (+1drink)</li>
-				<li>当日: 2500円 (+1drink)</li>
+				<li>前売: <span itemprop="lowPrice">2000円</span> (+1drink)</li>
+				<li>当日: <span itemprop="highPrice">2500円</span> (+1drink)</li>
 			</ul>
 		</section>
 	</div>
@@ -83,14 +89,14 @@
 
 
 	<div class="pure-u-1-1">
-		<section>
+		<section itemprop="tickets">
 			<h3>購入方法</h3>
 			<ul class="pure-g">
 				<li class="pure-u-1 pure-u-md-1-2">
 					<h4><i class="fa fa-circle"></i>WEBフォーム予約</h4>
 					こちらよりお申込みできます。<br>
 					<a class="pure-button button-primary"
-					   href="https://docs.google.com/forms/d/1iaINNnxCFn4CuGFsgUDYE0Na6Y0_A7kcQMarHE_o904/viewform">
+					   href="https://docs.google.com/forms/d/1iaINNnxCFn4CuGFsgUDYE0Na6Y0_A7kcQMarHE_o904/viewform" itemprop="offerurl">
 						<i class="fa fa-credit-card"></i>
 						WEB予約 お申込みフォーム
 					</a>
