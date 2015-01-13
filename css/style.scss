@@ -4,7 +4,6 @@ $linkColorHover: #87d1f5;
 
 //todo github ドメイン
 //todo ヘッダスクロール
-//todo itemprop
 //todo ソーシャルボタン確認
 //todo twitter cards
 //todo ogp
@@ -83,10 +82,14 @@ iframe {
 }
 
 .socials {
-  text-align: right;
+  padding: 0;
+  margin: 1.5em 0 0;
+
   li {
     display: inline-block;
     list-style: none;
+    vertical-align: top;
+    margin-bottom: 0;
   }
 }
 

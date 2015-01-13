@@ -57,10 +57,13 @@ iframe {
     color: #fff; }
 
 .socials {
-  text-align: right; }
+  padding: 0;
+  margin: 1.5em 0 0; }
   .socials li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    vertical-align: top;
+    margin-bottom: 0; }
 
 .contacts li {
   list-style: none; }
