@@ -56,6 +56,10 @@ iframe {
   .button-primary:hover {
     color: #fff; }
 
+.tickets li {
+  padding-right: 1em;
+  box-sizing: border-box; }
+
 .socials {
   padding: 0;
   margin: 1.5em 0 0; }
