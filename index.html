@@ -20,12 +20,21 @@
 
   <link href='//fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=1402019306719303";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div itemscope itemtype="http://data-vocabulary.org/Event">
   <header>
     <div class="logo"><img src="assets/img/logo.png" alt="we're fish"/></div>
@@ -33,21 +42,18 @@
   </header>
 
 
-  <main class="pure-g">
-    <div class="pure-u-1-1">
-      <h2 itemprop="description">"でかい音でフィッシュマンズを聴きたい"<br>ただそれだけの一夜、フィッシュマンズナイト大阪です。</h2>
+  <main class="container">
+
+    <h2 itemprop="description">"でかい音でフィッシュマンズを聴きたい"<br>ただそれだけの一夜、フィッシュマンズナイト大阪です。</h2>
 
 
-      <ul class="socials">
+    <div class="row">
+      <ul class="socials col-md-6 col-md-push-6">
         <li>
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=1402019306719303";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
+          <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="fishmansnight" data-size="large" data-hashtags="fmno16">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </li>
+        <li>
           <div class="fb-share-button" data-href="http://fishmansnight.net/" data-layout="box_count"></div>
         </li>
         <li>
@@ -57,146 +63,73 @@
         <li>
           <a href="http://b.hatena.ne.jp/entry/http://fishmansnight.net/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
         </li>
-        <li>
-          <span>
-          <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
-          <script type="text/javascript">
-            new media_line_me.LineButton({"pc":false,"lang":"ja","type":"e"});
-          </script>
-          </span>
-        </li>
-        <li>
-          <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="fishmansnight" data-size="large" data-hashtags="fmno16">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </li>
       </ul>
+
+
+      <div class="col-md-6 col-md-pull-6">
+        <section class="dateTime">
+          <h3>日時</h3>
+          <time itemprop="startDate" datetime="2016-03-20T15:00+09:00">
+            2016年3月20日 (日・祝前日)<br/>15:00
+          </time>
+          -
+          <time itemprop="endDate" datetime="2016-03-20T21:00+09:00">21:00</time>
+        </section>
+      </div>
     </div>
 
+    <div class="row place">
+      <div class="col-md-6">
+        <section>
+          <h3>会場</h3>
+          <div itemprop="location" itemscope itemtype="">
+            <h4 itemprop="name"><a href="http://socorefactory.com/" target="_blank">SOCORE FACTORY<i
+              class="fa fa-external-link"></i></a> (大阪・梅田)</h4>
+            <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+              <span itemprop="region">大阪市</span>
+              <span itemprop="locality">西区</span>
+              <span itemprop="street-address">南堀江2-13-26</span>
+            </span>
+            <br>
+            TEL: 06-6567-9852<br>
+          </div>
+        </section>
 
-    <div class="pure-u-1 pure-u-md-1-2">
-      <section class="dateTime">
-        <h3>日時</h3>
-        <time itemprop="startDate" datetime="2016-03-20T15:00+09:00">
-          2016年3月20日 (日・祝前日)<br/>15:00
-        </time>
-        -
-        <time itemprop="endDate" datetime="2016-03-20T21:00+09:00">21:00</time>
-      </section>
 
-      <section>
-        <h3>会場</h3>
-        <div itemprop="location" itemscope itemtype="">
-          <h4 itemprop="name"><a href="http://socorefactory.com/" target="_blank">SOCORE FACTORY<i
-            class="fa fa-external-link"></i></a> (大阪・梅田)</h4>
-				<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-					<span itemprop="region">大阪市</span>
-					<span itemprop="locality">西区</span>
-					<span itemprop="street-address">南堀江2-13-26</span>
-				</span>
+        <section class="contacts">
+          <h3>お問い合わせ</h3>
+          <ul>
+            <li><a href="mailto:fishmansnight@gmail.com"><i class="fa fa-envelope-o"></i>fishmansnight@gmail.com</a></li>
+            <li><a href="http://www.facebook.com/pages/fishmans-night-Osaka/267175286653715"><i
+              class="fa fa-facebook-square fa-lg"></i>Facebookページ</a></li>
+            <li><a href="https://twitter.com/fishmansnight"><i class="fa fa-twitter fa-lg"></i>@fishmansnight</a> &nbsp;
+              (ハッシュタグ <a href="https://twitter.com/share?text=+%23fmno16">#fmno16</a> )
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-md-6">
+        <section>
+          <h3>アクセス</h3>
+          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2706869702215!2d135.4858447065075!3d34.67287375453771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e706672454e5%3A0x5c0ed6ec5cb83047!2sSOCORE+FACTORY!5e0!3m2!1sja!2sus!4v1453179958769" frameborder="0" style="border:0" allowfullscreen></iframe>
           <br>
-          TEL: 06-6567-9852<br>
-        </div>
-      </section>
-
-      <section itemprop="ticketAggregate">
-        <h3>チケット</h3>
-        <ul>
-          <li>前売: <span itemprop="lowPrice">2000円</span> (+1drink)</li>
-          <li>当日: <span itemprop="highPrice">2500円</span> (+1drink)</li>
-          <li>学割: <span itemprop="highPrice">1500円</span> (+1drink / 要学生証提示)</li>
-        </ul>
-        <small>※ 学割希望の方は <a href="https://docs.google.com/forms/d/1iaINNnxCFn4CuGFsgUDYE0Na6Y0_A7kcQMarHE_o904/viewform"
-                            itemprop="offerurl">予約フォーム</a> よりお申込みください (プレイガイドチケットには適用されません)
-        </small>
-      </section>
+          <a href="https://www.google.com/maps/place/日本,+〒550-0015+大阪府大阪市西区南堀江２丁目１３−２６" target="_blank">google mapで見る<i
+            class="fa fa-external-link"></i></a>
+        </section>
+      </div>
     </div>
 
 
-    <div class="pure-u-1 pure-u-md-1-2">
-      <section>
-        <h3>アクセス</h3>
-        <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.2706869702215!2d135.4858447065075!3d34.67287375453771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e706672454e5%3A0x5c0ed6ec5cb83047!2sSOCORE+FACTORY!5e0!3m2!1sja!2sus!4v1453179958769" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <br>
-        <a href="https://www.google.com/maps/place/日本,+〒550-0015+大阪府大阪市西区南堀江２丁目１３−２６" target="_blank">google mapで見る<i
-          class="fa fa-external-link"></i></a>
-      </section>
-    </div>
-
-
-    <div class="pure-u-1-1">
-      <section class="tickets" itemprop="tickets">
-        <h3>購入方法</h3>
-        <ul class="pure-g">
-          <li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <h4><i class="fa fa-circle"></i>WEBフォーム予約</h4>
-            こちらよりお申込みできます。<br>
-            <a class="pure-button button-primary"
-               href="https://docs.google.com/forms/d/1iaINNnxCFn4CuGFsgUDYE0Na6Y0_A7kcQMarHE_o904/viewform"
-               itemprop="offerurl">
-              <i class="fa fa-credit-card"></i>
-              WEB予約 お申込みフォーム
-            </a>
-          </li>
-          <li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <h4><i class="fa fa-circle"></i>Shangri-La (会場) でのメール予約</h4>
-            <a href="info@shan-gri-la.jp"><i class="fa fa-envelope-o"></i>info@shan-gri-la.jp</a><br>
-            ※件名に「3/7 フィッシュマンズナイト大阪予約」<br>
-            本文にお名前、お電話番号、枚数を記入の上、お申し込み下さい。
-          </li>
-          <li class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <h4><i class="fa fa-circle"></i>各プレイガイド</h4>
-            チケットぴあ Pコード: 256-384<br>
-            ローソンチケット Lコード: 57133
-          </li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="pure-u-1">
-      <section>
-        <h3>DJ</h3>
-        カイホリ / カズキ / ナナオ / マツオ
-      </section>
-      <section>
-        <h3>FOOD</h3>
-        <ul>
-          <li><a href="https://www.facebook.com/cafekaokao" target="_blank">喫茶カオカオ<i
-            class="fa fa-external-link"></i></a></li>
-          <li><a href="https://www.facebook.com/kohibata" target="_blank">食堂カフェ コーヒー畑<i class="fa fa-external-link"></i></a>
-          </li>
-          <li><a href="http://cherpina.com/" target="_blank">ローマピザ食堂 チェルピーナ<i class="fa fa-external-link"></i></a></li>
-        </ul>
-      </section>
-    </div>
-
-
-    <div class="pure-u-1">
-      <section class="contacts">
-        <h3>お問い合わせ</h3>
-        <ul>
-          <li><a href="mailto:fishmansnight@gmail.com"><i class="fa fa-envelope-o"></i>fishmansnight@gmail.com</a></li>
-          <li><a href="http://www.facebook.com/pages/fishmans-night-Osaka/267175286653715"><i
-            class="fa fa-facebook-square fa-lg"></i>Facebookページ</a></li>
-          <li><a href="https://twitter.com/fishmansnight"><i class="fa fa-twitter fa-lg"></i>@fishmansnight</a> &nbsp;
-            (ハッシュタグ <a href="https://twitter.com/share?text=+%23fmno16">#fmno16</a> )
-          </li>
-        </ul>
-      </section>
-
-
-      <section class="fb-box">
-        <iframe
-          src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Ffishmans-night-Osaka%2F267175286653715&amp;width=960&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=383421923280"
-          scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:290px;"
-          allowTransparency="true"></iframe>
-      </section>
-    </div>
+    <section class="fb-box">
+      <div class="fb-page" data-href="https://www.facebook.com/fishmansnight/" data-width="500" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/fishmansnight/"><a href="https://www.facebook.com/fishmansnight/">fishmans night Osaka</a></blockquote></div></div>
+    </section>
   </main>
-
-
-  <footer>
-    <p>I'm fish, You're fish, We're fish.<br>fishmans night osaka 1999-2016</p>
-  </footer>
 </div>
+
+
+<footer>
+  <p>I'm fish, You're fish, We're fish.<br>fishmans night osaka 1999-2016</p>
+</footer>
 </body>
 </html>
