@@ -4,7 +4,7 @@
   "description": "my-gulp-webpack",
   "main": "index.php",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": ">=3.4.0"
   },
   "devDependencies": {
     "browser-sync": "^2.9.11",
@@ -18,7 +18,8 @@
     "gulp-webpack": "^1.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "author": "matsuoshi"
 }
